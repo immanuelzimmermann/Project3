@@ -1,4 +1,140 @@
-body {
-	font-family: 'Merriweather', serif;
+* {
+	box-sizing: border-box;
 }
 
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+/*	HEADER	*/
+
+header {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header h1 {
+	background: #000;
+	color: #fff;
+	padding: 1em 0;
+	margin-top: 0;
+}
+
+header h2{
+	padding-bottom: .5em;
+}
+
+header h2,
+header p
+{
+	width: 80%;
+	margin: auto;
+}
+
+/*	MAIN	*/
+
+fieldset {
+	border: none;
+}
+
+form {
+	width: 90%;
+	margin: auto;
+	padding: 1em 0;
+}
+
+input,
+select,
+textarea {
+	display: block;
+	width: 100%;
+	height: 3em;
+	border: none;
+	background-color: #ededed;
+	padding: 1em 1em;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+	border: 1px solid #d3d3d3;
+}
+
+#zip_code {
+	width: 30%;
+}
+
+button {
+	background-color: #545454;
+	color: #fff;
+	width: 100%;
+	height: 3em;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #2a2a2a;
+}
+
+
+[required]::placeholder {
+	text-align: right;
+	color: #939393;
+	padding-right: 1em;
+}
+
+.other_text {
+	margin: 30px 0;
+}
+
+legend {
+	font-size: 1.5em;
+	margin: 1em 0;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	display: inline;
+	width: inherit;
+	height: inherit;
+	margin: 8px 0 8px;
+}
+
+textarea {
+	min-height: 5em;
+}
+
+/*	FOOTER	*/
+
+footer p {
+	text-align: center;
+	margin: 30px 0 30px;
+
+}
+
+ /*/////////////////////////////*/
+
+@media(min-width: 769px){
+
+	form {
+		width: 60%;
+	}
+	
+	label {
+		width: 20%;
+	}
+
+	input,
+	select {
+		width: 79%;
+	}
+
+	label,
+	input,
+	select {
+		display: inline-block;
+		margin-bottom: 1.5em;
+	}
+
+}

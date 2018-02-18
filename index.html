@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Online Registration Form</title>
 	<meta charset="utf-8">
-	<meta charset="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
-
 	<header>
 		<h1>The Code Review</h1>
+		<h2>Sign up for our newsletter</h2>
+		<p>Get the latest news on how your code is doing right in your inbox</p>
+		<hr>
 	</header>
+	
+	<form action="index.html" method="post">
+		<fieldset>
+			<legend class="contact_information">Contact Information</legend>
 
+			<label for="user_name">Full Name</label>
+			<input id="name" type="text" name="user_name" placeholder="required" required>
 
+			<label for="user_mail">Email Address</label>
+			<input id="mail" type="email" name="user_mail" placeholder="required" required>
 
+			<label for="user_phone">Phone Number</label>
+			<input id="phone" type="tel" name="user_phone">
+
+			<label for="user_street">Street Address</label>
+			<input id="street" type="text" name="user_street">
+
+			<label for="user_city">City</label>
+			<input id="city" type="text" name="user_city">
+
+			<label for="user_state">State</label>
+			<select id="state" name="user_state">
+				<option value="">Choose State</option>
+				<option value="BW">Baden-Württemberg</option>
+				<option value="BY">Bavaria</option>
+				<option value="BE">Berlin</option>
+				<option value="BB">Brandenburg</option>
+				<option value="HB">Bremen</option>
+				<option value="HH">Hamburg</option>
+				<option value="HE">Hesse</option>
+				<option value="NI">Lower Saxony</option>
+				<option value="MV">Mecklenburg-Vorpommern</option>
+				<option value="NW">North Rhine-Westphalia</option>
+				<option value="RP">Rhineland-Palatinate</option>
+				<option value="SL">Saarland</option>
+				<option value="SN">Saxony</option>
+				<option value="ST">Saxony-Anhalt</option>
+				<option value="SH">Schleswig-Holstein</option>
+				<option value="TH">Thuringia</option>
+			</select>
+
+			<label for="user_zip">ZIP Code</label>
+			<input id="zip_code" type="text" name="user_zip">
+			<hr>
+		</fieldset>
+
+		<fieldset>
+			<legend class="news">Newsletter</legend>
+			
+			<p>Select the newsletters you would like to receive</p>
+
+			<input id="html_check" type="checkbox" name="html_news" value="html_news">
+			<label for="html_news">HTML News</label><br>
+
+			<input id="css_check" type="checkbox" name="css_news" value="css_news">
+			<label for="css_news">CSS News</label><br>
+
+			<input id="js_check" type="checkbox" name="js_news" value="js_news">
+			<label for="js_news">Javascript News</label>
+		
+			<p class="news_format">Newsletters format</p>
+
+			<input id="html_form" type="radio" name="news_form">
+			<label for="html_form">HTML</label><br>
+
+			<input id="text_form" type="radio" name="news_form">
+			<label for="text_form">Plain text</label>
+
+			<div class="other_text">
+				<p>Other topics you'd like to hear about</p>
+				<textarea id="text_message" name="text_area"></textarea>
+			</div>
+
+			<button type="submit">Sign up</button>
+		</fieldset>
+	</form>
+	<footer>
+		<p>Copyright The Code Review</p>
+	</footer>
 
 </body>
 </html>
